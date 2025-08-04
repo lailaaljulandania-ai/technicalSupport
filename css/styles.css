@@ -1,0 +1,304 @@
+/* جميع العناصر */
+* {
+  margin: 0; /* إزالة الهوامش (المسافة بين العنصر والعناصر الأخرى من حوله)*/
+  padding: 0; /* إزالة المسافة بين محتوى العنصر وحدوده */
+  }
+/* class body styles */
+.login {
+background-color: #2a787cb3; /* لون خلفية الصفحة */
+margin: 0; /* إزالة الهوامش الخارجية (المسافة بين العنصر والعناصر الأخرى من حوله)*/
+padding: 0; /* إزالة الهوامش الداخلية */
+display: flex; /* استخدام flex لتوسيط العناصر */
+justify-content: center; /* توسيط أفقي للمحتوى */
+align-items: center; /* توسيط عمودي للمحتوى */
+height: 100vh; /* تغيير ارتفاع العنصر */
+direction: rtl; /* اتجاه النص من اليمين لليسار */
+}
+
+/* login div */
+.login-box {
+  background-color: #ffffff; /* تغيير لون الخلفية */
+  padding: 40px 30px; /* الهوامش داخل العنصر */
+  border-radius: 12px; /* زوايا منحنية */
+  width: 320px; /* عرض العنصر */
+}
+
+/* login h1 */
+.login-box h1 {
+  text-align: center; /* محاذاة النص للوسط */
+  margin-bottom: 25px; /* مسافة أسفل العنوان */
+  color: #333; /* لون النص */
+}
+
+/* form labels */
+form label {
+  display: block; /* عرض التسمية في سطر كامل */
+  font-weight: 600; /* سمك الخط */
+  color: #555; /* لون الخط */
+}
+
+/* text and password inputs */
+#loginForm input[type="text"],
+#loginForm input[type="password"] {
+  width: 93%; /*  (div)العرض يملأ الحاوية */
+  padding: 12px; /* المسافة بين محتوى حدود العنصر وحدوده*/
+  margin-bottom: 20px; /* مسافة أسفل الحقل */
+  border: 1px solid #ccc; /* إطار العنصر */
+  border-radius: 8px; /* زوايا منحنية */
+  font-size: 14px; /* حجم الخط */
+}
+
+/* submit button */
+form input[type="submit"] {
+  width: 100%; /* العرض */
+  padding: 14px; /* المسافة بين حدود العنصر ومحتواه */
+  background-color: cadetblue; /* لون الخلفية  */
+  color: white; /* لون النص  */
+  border: none; /* إزالة الحدود */
+  border-radius: 30px; /*  زوايا منحنية*/
+  font-size: 16px; /* حجم الخط */
+  font-weight: bold; /*  الخط عريض */
+  cursor: pointer; /* تغيير شكل المؤشر عند المرور */
+  margin-bottom: 20px; /* الهامش الخارجي السفلي */
+}
+
+/* submit hover */
+form input[type="submit"]:hover {
+  background-color: rgba(78, 193, 206, 0.847) ; /* لون الخلفية */
+}
+
+/* warning message */
+#warningMessage {
+background-color: rgba(255, 161, 127, 0.811); /* لون الخلفية */
+padding: 14px; /* المسافة الداخلية بين العنصر ومحتواه */
+display: none; /* إخفاء العنصر */
+}
+
+/* شريط التنقل */
+nav{ 
+  background-color: cadetblue; /* لون الخلفية  */
+  padding: 10px; /* المسافة الداخلية بين العنصر ومحتواه */
+  direction: rtl; /* اتجاه المحتوى من اليمين لليسار */
+  display: flex; /* عرض العناصر بجانب بعض */
+  justify-content: space-between; /* توزيع العناصر بحيث تكون مسافة بينها */
+  align-items: center; /* توسيط العناصر عموديًا */
+  color: white; /* لون النص */
+}
+
+/* قائمة التنقل */
+nav ul{
+  list-style: none; /* إزالة النقاط من القائمة */
+  display: flex; /* عرض العناصر بجانب بعض */
+  gap: 20px; /* مسافة بين العناصر */
+  align-items: center; /* توسيط العناصر عموديًا */
+}
+
+/* عناصر القائمة */
+nav ul li{
+  margin-top: 12px; /* مسافة علوية */
+}
+
+/* الروابط داخل القائمة */
+nav li a {
+  align-items: center; /* توسيط العناصر عموديًا */
+  text-decoration: none; /* إزالة الخط السفلي للرابط */
+  font-weight: bold; /* عرض النص */
+  color: white; /* لون النص */
+}
+/* البحث */
+#search {
+  display: flex; /* عرض عناصر form جنب إلى جنب*/
+}
+/* زر البحث */
+#search button{
+  background-color: transparent; /* لون خلفية العنصر*/
+  border:none; /*حدود العنصر*/
+  cursor: pointer; /*شكل الفأرة*/
+}
+/* search input */
+#search input[type="text"]{
+  width: 100%; /*  (div)العرض يملأ الحاوية */
+  height: 5vh; /* إرتفاع العنصر*/
+  text-align: center;/* توسيط النص */
+  background-color: #ccc; /* لون خلفية العنصر*/
+  border: 1px solid #ccccccac; /* إطار العنصر */
+  border-radius: 8px; /* زوايا منحنية */
+  font-size: 14px; /* حجم الخط */
+}
+/* تظليل نص البحث */
+.highlight {
+  background-color: #ffea00cb; /* لون خلفية العنصر*/
+  font-weight: bold; /*ثقل الخط*/
+}
+
+/* حاوية للشرائح */
+.slider {
+  width: 100%; /* عرض كامل */
+  margin: 0px; /* إزالة الهوامش */
+}
+
+/* الشريحة */
+.slide {
+  width: 100%; /* عرض الشريحة */
+  display: none; /* إخفاء الشريحة افتراضيًا */
+  height: 80vh;  /* ارتفاع الصورة */
+  object-fit: cover; /*قطع الأجزاء الزائدة، مع الحفاظ على نسبة الطول والعرض */
+}
+
+/* الشريحةالظاهرة */
+.slide.active {
+  display: block; /* إظهار الشريحة */
+}
+/* أزرار السلايدر */
+.slider-btn {
+  position: absolute; /* تحديد موقع الزر بشكل مطلق داخل class slider */
+  top: 50%; /* وضع الزر في منتصف ارتفاع slider عمودياً */
+  transform: translateY(-50%); /* تحريك الزر للأعلى نصف ارتفاع slider لتوسيطه عمودياً */
+  background-color: rgba(0,0,0,0.5); /* لون الخلفية */
+  color: white; /* لون النص  */
+  border: none; /* إزالة الإطار الافتراضي */
+  font-size: 30px; /* حجم الخط  */
+  padding: 10px 20px; /* المسافة الداخلية بين الحدود العنصر ومحتواه*/
+  cursor: pointer; /* عند المرور على الزر يتحول شكل المؤشر إلى اليد للإشارة */
+  user-select: none; /* منع تحديد النص داخل الزر عند السحب بالماوس */
+  border-radius: 50%; /* تحويل الزر إلى شكل دائري */
+  z-index: 10; /* ترتيب العنصر أمام السلايدر*/
+}
+/* زر السلايدر يسار */
+#prevBtn {
+  left: 10px; /* إزاحة العنصر من جهة اليسار*/
+}
+/* زر السلايدر يمين */
+#nextBtn {
+  right: 10px; /* إزاحة العنصر من جهة اليمين*/
+}
+/* المحتوى */
+#content{
+  direction: rtl; /* اتجاه النص من اليمين لليسار */
+  z-index: 10;  /* ترتيب الطبقات (يظهر فوق العناصر الأقل) */
+  position: relative; /* يحدد موضعه بالنسبة لوضعه الطبيعي */
+  margin-right: 30px; /* مسافة خارجية حول العنصر من اليمين */
+  margin-left: 30px; /* مسافة خارجية حول العنصر من اليسار */
+  box-shadow: 6px 6px 20px 6px #55555541; /* ظل خارجي حول العنصر */
+  background-color: cadetblue; /* لون خلفية العنصر */
+  top: -57px;  /* رفع العنصر للأعلى بمقدار 65 بكسل */
+}
+/* فقرات المحتوى */
+#content p{ 
+  padding: 20px 10px 10px 20px;  /* المسافة بين محتوى العنصر وحدوده */
+  background-color: #ffffff;  /* لون خلفية الفقرة */
+  line-height: 2; /* مسافة عمودية بين الصفوف  */
+}
+/*العنوان الرئيسي  */
+#content h1{ 
+  color: #ffffff; /* لون نص العنوان */
+  padding: 10px 10px 10px 20px;/* المسافة بين محتوى العنصر وحدوده */
+  width: 100%; /* عرض العنوان يملأ عرض العنصر الأساسي بالكامل */
+}
+.content{
+  direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
+  padding-right: 60vh;
+}
+
+.contact-form {
+  direction: rtl; /* اتجاه النص داخل النموذج من اليمين إلى اليسار */
+  background-color: #ffffff; /* لون خلفية النموذج أبيض */
+  padding: 20px 30px; /* مسافة داخلية: 20 بكسل فوق وتحت، 30 يمين ويسار */
+  border-radius: 8px; /* حواف مستديرة للنموذج */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ظل خفيف أسفل النموذج */
+  width: 350px; /* عرض النموذج 350 بكسل */
+}
+
+.contact-form h2 {
+  margin-bottom: 20px; /* مسافة أسفل العنوان */
+  text-align: center; /* محاذاة العنوان في الوسط */
+}
+
+.contact-form label {
+  display: block; /* عرض العنصر كسطر منفصل */
+  margin-bottom: 5px; /* مسافة أسفل التسمية */
+  font-weight: bold; /* خط عريض */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* عرض الحقول 100% من عرض النموذج */
+  padding: 10px; /* حشو داخلي 10 بكسل */
+  margin-bottom: 15px; /* مسافة بين الحقول */
+  border: 1px solid #ccc; /* إطار رمادي فاتح */
+  border-radius: 4px; /* حواف مستديرة للحقول */
+  box-sizing: border-box; /* تشمل الحشو والحدود ضمن العرض الكلي */
+}
+
+.contact-form textarea {
+  resize: vertical; /* يسمح بتغيير حجم مربع النص عموديًا فقط */
+  height: 120px; /* ارتفاع مربع النص 120 بكسل */
+}
+
+.contact-form button {
+  background-color: cadetblue; /* لون خلفية الزر تركواز داكن */
+  color: white; /* لون نص الزر أبيض */
+  padding: 10px; /* حشو داخلي للزر */
+  width: 100%; /* عرض الزر 100% من عرض النموذج */
+  border: none; /* إزالة الحدود */
+  border-radius: 4px; /* حواف مستديرة للزر */
+  cursor: pointer; /* تغيير مؤشر الفأرة ليد عند المرور فوق الزر */
+  font-size: 16px; /* حجم الخط داخل الزر */
+}
+
+.contact-form button:hover {
+  background-color: rgba(78, 193, 206, 0.847); /* تغيير لون الخلفية عند المرور بالفأرة */
+}
+
+h2 {
+  padding-right: 10px;
+  margin-bottom: 30px;  /* إضافة مسافة 30 بكسل أسفل العنوان */
+  color: #333;   /* لون النص رمادي غامق */
+}
+
+.slider-container {
+  background-color: #ffffff;
+  position: relative;/* يحدد موضع العنصر بالنسبة لعناصره الداخلية (مفيد لتحديد مكان الأزرار مثلاً) */
+  overflow: hidden;  /* يخفي أي محتوى يخرج خارج حدود العنصر */
+  max-width: 100%;   /* الحد الأقصى لعرض العنصر هو 100% من عرض الشاشة */
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
+.services-slider {
+  display: flex; /* عرض العناصر بشكل أفقي باستخدام Flexbox */
+  gap: 30px; /* مسافة 20 بكسل بين كل صندوق خدمة */
+  overflow-x: auto;  /* تمكين التمرير الأفقي عند امتلاء المحتوى */
+  padding-bottom: 10px; /* مسافة أسفل العناصر داخل السلايدر */
+  scrollbar-width: none; /* لإخفاء الشريط scroll */
+}
+
+.service-box {
+  /* display: none; */
+  min-width: 250px;  /* العرض الأدنى لكل صندوق خدمة هو 250 بكسل */
+  background-color: #ffffff;  /* خلفية الصندوق بيضاء */
+  border-left: 2px solid cadetblue;/* إطار أيسر أزرق بسماكة  2 بكسل */
+  border-right: 2px solid cadetblue;/* إطار أيمن أزرق بسماكة  2 بكسل */
+  border-radius: 10px; /* حواف دائرية ناعمة للصندوق */
+  padding: 20px;/* مسافة داخلية حول محتوى الصندوق */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* ظل خفيف للصندوق لإعطائه عمق */
+  flex-shrink: 0;   /* يمنع تقليص عرض الصندوق عند التصغير */
+}
+.service-box.active {
+  display: block;
+}
+.service-box h3 {
+  margin-top: 0;/* إزالة أي مسافة علوية بين العنوان والمربع */
+  color: cadetblue;   /* لون العنوان داخل الصندوق أزرق فاتح */
+}
+
+
+/* تذييل الصفحة */
+footer {
+  display: flex; /* عرض العناصر بجانب بعض */
+  direction: rtl; /* اتجاه المحتوى من اليمين لليسار */
+  background-color: cadetblue; /* خلفية التذييل */
+  padding: 20px; /*  المسافة الداخلية بين العنصر ومحتواه */
+  color: white; /* لون النص */
+  justify-content: center; /* توسيط أفقي للمحتوى */
+}

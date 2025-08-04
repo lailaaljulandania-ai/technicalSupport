@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- عنوان التبويب -->
+        <title>دائرة الدعم الفني</title>
+        <!-- أيقونة التبويب -->
+        <link rel="icon" href="images/logo.png">
+        <!-- ربط ملف css -->
+         <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body class="login">
+        <!-- login div -->
+         <div class="login-box">
+            <h1>صفحة تسجيل الدخول</h1>
+            <!-- login form -->
+            <form id="loginForm">
+                <!-- اسم المستخدم -->
+                <label for="username">اسم المستخدم</label>
+                <input type="text" id="username" placeholder="اسم المستخدم" required>
+                <!-- كلمة المرور -->
+                <label for="password">كلمة المرور</label>
+                <input type="password" id="password" placeholder="كلمة المرور" required>
+                <!-- زر الدخول -->
+                <input type="submit" value="دخول">
+            </form>
+            <!-- الرسالة التحذيرية -->
+            <div id="warningMessage"></div>
+         </div>
+        <!-- الربط مع صفحة الجافا سكربت -->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- عنوان التبويب -->
+        <title>دائرة الدعم الفني</title>
+        <!-- أيقونة التبويب -->
+        <link rel="icon" href="../images/logo.png">
+        <!-- ربط ملف css -->
+         <link rel="stylesheet" href="../css/styles.css">
+    </head>
+    <body>
+        <header>
+            <!-- شريط التنقل -->
+            <nav class="nav">
+                <ul>
+                    <li><img src="../images/logo.png" width="40px" height="40px"></li>
+                    <li><a href="home.html">الرئيسية</a></li>
+                    <li><a href="../pages/about.html">من نحن</a></li>
+                    <li><a href="../pages/contact.html">تواصل معنا</a></li>
+                </ul>
+                <form id="search">
+                    <input type="text" id="searchFeild" placeholder="ابحث هنا">
+                    <button type="submit">
+                        <img src="../images/search.png" alt="بحث" width="30" height="30">
+                    </button>
+                </form>
+            <!-- عرض الرسالةالترحيبية -->
+            <p id="greeting"></p>
+            </nav>
+        </header>
+        <!-- Slider -->
+        <div class="slider">
+            <!-- صور السلايدر -->
+            <img class="slide active" src="../images/slide1.jpg" alt="Slide 1">
+            <img class="slide" src="../images/slide2.jpg" alt="Slide 2">
+            <!-- أزرار التنقل -->
+            <button id="prevBtn" class="slider-btn">‹</button>
+            <button id="nextBtn" class="slider-btn">›</button>
+        </div>
+
+        <div id="content">
+            <h1 style="padding-right: 30px;">الدعم الفني</h1>
+            <p style="padding-right: 30px;">يقوم فريقنا في الدعم الفني بتحديد المشكلة ومعالجتها
+                فور حدوثها حتى قبل أن يلاحظها المستخدم؛ حيث تركّز
+                أقسام الدعم على مساعدة المستخدمين وحل مشكلات وأعطال
+                الأنظمة والأجهزة التي يواجهها من أبسطها و حتى أكثرها تعقيداً
+                ويمكن طلب الدعم الفوري للطلبات العاجلة على رقم الهاتف 93456728
+            </p>
+            <div class="slider-container">
+                <h2>خدماتنا</h2>
+                <div class="services-slider" id="slider">
+                    <div class="service-box active">
+                        <h3> الدعم عبر الهاتف</h3>
+                        <p>تواصل مباشر مع الفريق الفني لحل مشكلاتك بسرعة.</p>
+                    </div>
+                    <div class="service-box active">
+                        <h3> الدعم عن بُعد</h3>
+                        <p>الدخول إلى جهازك عن بُعد وإصلاح الأعطال بدون زيارة ميدانية.</p>
+                    </div>
+                    <div class="service-box active">
+                        <h3> الصيانة الدورية</h3>
+                        <p>فحص شهري للأجهزة والشبكات لضمان الأداء السليم.</p>
+                    </div>
+                    <div class="service-box">
+                        <h3> مراقبة 24/7</h3>
+                        <p>مراقبة الأنظمة والخوادم على مدار الساعة.</p>
+                    </div>
+                    <div class="service-box">
+                        <h3> إعداد الشبكات</h3>
+                        <p>تجهيز شبكات الإنترنت الداخلية وربط الأجهزة بشكل آمن.</p>
+                    </div>
+                    <div class="service-box">
+                        <h3> تحديث الأنظمة</h3>
+                        <p>تحديث أنظمة التشغيل والبرامج لضمان الحماية والأداء.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+              <p>&copy; 2025 جميع الحقوق محفوظة </p>
+        </footer>
+        <!-- الربط مع صفحة الجافا سكربت -->
+        <script src="../js/javascripts.js"></script>
+    </body>
+</html>
