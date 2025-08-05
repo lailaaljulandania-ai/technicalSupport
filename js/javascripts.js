@@ -1,6 +1,6 @@
 // اسم المستخدم
 let userName = localStorage.getItem("name");
-if(document.getElementById("greeting")){
+
 // عرض اسم المستخدم
 document.getElementById("greeting").innerHTML = `مرحبا، ${userName}`;
 /*
@@ -45,7 +45,7 @@ showSlide(slideIndex);
 
 // تشغيل دالة nextSlide تلقائيا كل ثانيتين
 setInterval(nextSlide, 2000);
-}
+
 /*
 البحث 
 داخل 

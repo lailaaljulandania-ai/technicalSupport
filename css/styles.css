@@ -195,9 +195,9 @@ nav li a {
   padding: 10px 10px 10px 20px;/* المسافة بين محتوى العنصر وحدوده */
   width: 100%; /* عرض العنوان يملأ عرض العنصر الأساسي بالكامل */
 }
-.content{
+#contact{
   direction: rtl; /* اتجاه النص من اليمين إلى اليسار */
-  padding-right: 60vh;
+  padding-right: 75vh;
 }
 
 .contact-form {
@@ -253,7 +253,7 @@ nav li a {
 h2 {
   padding-right: 10px;
   margin-bottom: 30px;  /* إضافة مسافة 30 بكسل أسفل العنوان */
-  color: #333;   /* لون النص رمادي غامق */
+  color: cadetblue;   /* لون النص رمادي غامق */
 }
 
 .slider-container {
@@ -293,6 +293,7 @@ h2 {
 }
 
 
+
 /* تذييل الصفحة */
 footer {
   display: flex; /* عرض العناصر بجانب بعض */
@@ -302,3 +303,4 @@ footer {
   color: white; /* لون النص */
   justify-content: center; /* توسيط أفقي للمحتوى */
 }
+
