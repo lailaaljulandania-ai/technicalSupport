@@ -1,0 +1,57 @@
+body {
+  background:#f2f2f2;/* لون الخلفية العام للصفحة */
+  font-family: Arial, sans-serif; /* نوع الخط المستخدم في الصفحة */
+  display:flex;  /* استخدام Flexbox لترتيب العناصر */
+  justify-content:center; /* جعل المحتوى يتوسط أفقياً */
+  align-items:center;/* جعل المحتوى يتوسط عمودياً */
+  height:100vh;  /* جعل ارتفاع الصفحة يملأ كامل الشاشة */
+}
+
+.calculator {
+  background:#fff; /* لون خلفية الآلة الحاسبة */
+  padding:20px;  /* مسافة داخلية حول المحتوى */
+  border-radius:10px;/* جعل الزوايا مستديرة */
+  box-shadow:0 10px 20px rgba(0,0,0,0.2); /* ظل للصندوق */
+  width:260px; /* عرض ثابت للآلة الحاسبة */
+}
+
+.display {
+  width:93%;  /* عرض كامل داخل الصندوق */
+  height:60px; /* ارتفاع منطقة العرض */
+  border:none; /* بدون حدود */
+  border-radius:5px; /* زوايا مستديرة خفيفة */
+  background:#eaeaea;/* لون خلفية حقل العرض */
+  margin-bottom:15px;/* مسافة تحت الحقل */
+  font-size:26px;  /* حجم الخط داخل الحقل */
+  text-align:right;  /* محاذاة النص لليمين */
+  padding:10px; /* مسافة داخلية حول النص */
+}
+
+.buttons {
+  display:grid;  /* استخدام شبكة لتوزيع الأزرار */
+  grid-template-columns:repeat(4,1fr); /* شبكة مكونة من ٤ أعمدة متساوية */
+  gap:10px;  /* مسافة بين كل زر */
+}
+
+button {
+  padding:15px;  /* مسافة داخلية لكل زر */
+  font-size:18px;  /* حجم الخط داخل الأزرار */
+  border:none;  /* إزالة الإطار الافتراضي */
+  background:#dcdcdc;/* لون خلفية الزر */
+  border-radius:5px;/* جعل الزر بزوايا دائرية */
+  cursor:pointer;  /* تغيير شكل المؤشر عند المرور */
+  transition:.3s; /* مدة تأثير الانتقال (للـ hover) */
+}
+
+button:hover {
+  background:#c4c4c4;/* تغيير اللون عند المرور على الزر */
+}
+
+.equal {
+  background:cadetblue;   /* اللون الأساسي لزر (=) */
+  color:#fff;  /* لون خط أبيض داخل الزر */
+}
+
+.equal:hover {
+  background:#4e7a7a;/* لون أغمق عند المرور على زر (=) */
+}

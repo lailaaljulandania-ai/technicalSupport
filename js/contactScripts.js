@@ -7,6 +7,7 @@
 const searchForm = document.getElementById('search');
 // الاستماع إلى نقر زر الإرسال أو Enter
 searchForm.addEventListener('submit', function(event){
+  removeHighlight();
   // منع إعادة تحميل الصفحة
   event.preventDefault();
   // حفظ القيمة المدخلة في متغير
@@ -29,3 +30,16 @@ searchForm.addEventListener('submit', function(event){
   // مسح محتويات حقل البحث بعد إتمام عملية البحث
   searchForm.searchFeild.value = "";
 });
+
+
+// دالة إزالة التظليل السابق
+function removeHighlight(){
+  const content = document.getElementById('contact');
+  // حفظ محتويات النصوص في متغير
+  const tags = content.querySelectorAll('*');
+  // الدوران على جميع عناصر tags
+  for (let tag of tags){
+    // إزالة كلاس التظليل من جميع الصفحة
+    tag.classList.remove('highlight');
+  }
+}

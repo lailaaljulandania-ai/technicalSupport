@@ -274,7 +274,7 @@ h2 {
 }
 
 .service-box {
-  /* display: none; */
+  display: none;
   min-width: 250px;  /* العرض الأدنى لكل صندوق خدمة هو 250 بكسل */
   background-color: #ffffff;  /* خلفية الصندوق بيضاء */
   border-left: 2px solid cadetblue;/* إطار أيسر أزرق بسماكة  2 بكسل */
@@ -291,9 +291,13 @@ h2 {
   margin-top: 0;/* إزالة أي مسافة علوية بين العنوان والمربع */
   color: cadetblue;   /* لون العنوان داخل الصندوق أزرق فاتح */
 }
-
-
-
+#previous, #next{
+  font-size: 40px;
+  color: cadetblue;
+  border: none;
+  background-color: transparent;
+  margin-right: 63.5vh;
+}
 /* تذييل الصفحة */
 footer {
   display: flex; /* عرض العناصر بجانب بعض */
@@ -303,4 +307,6 @@ footer {
   color: white; /* لون النص */
   justify-content: center; /* توسيط أفقي للمحتوى */
 }
-
+.service-box h3 span.highlight{
+  background-color: transparent;
+}

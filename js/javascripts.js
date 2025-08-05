@@ -55,6 +55,7 @@ setInterval(nextSlide, 2000);
 const searchForm = document.getElementById('search');
 // الاستماع إلى نقر زر الإرسال أو Enter
 searchForm.addEventListener('submit', function(event){
+  removeHighlight();
   // منع إعادة تحميل الصفحة
   event.preventDefault();
   // حفظ القيمة المدخلة في متغير
@@ -63,17 +64,29 @@ searchForm.addEventListener('submit', function(event){
   const content = document.getElementById('content');
 
   // حفظ محتويات النصوص في متغير
-  const pTags = content.querySelectorAll('*');
-  // الدوران على جميع عناصر <p> tags
-  for (let p of pTags){
+  const tags = content.querySelectorAll('*');
+  // الدوران على جميع عناصر tags
+  for (let tag of tags){
     // حفظ نص التاج في متغير
-    const text = p.innerHTML;
+    const text = tag.innerHTML;
     // التأكد من وجود كلمة البحث في النص
     if(searchText && text.includes(searchText)){
       // تظليل النص 
-      p.innerHTML = text.replaceAll(searchText, `<span class="highlight"> ${searchText}</span>`)
+      tag.innerHTML = text.replaceAll(searchText, `<span class="highlight"> ${searchText}</span>`)
     }
   }
   // مسح محتويات حقل البحث بعد إتمام عملية البحث
   searchForm.searchFeild.value = "";
 });
+
+// دالة إزالة التظليل السابق
+function removeHighlight(){
+  const content = document.getElementById('content');
+  // حفظ محتويات النصوص في متغير
+  const tags = content.querySelectorAll('*');
+  // الدوران على جميع عناصر tags
+  for (let tag of tags){
+    // إزالة كلاس التظليل من جميع الصفحة
+    tag.classList.remove('highlight');
+  }
+}
