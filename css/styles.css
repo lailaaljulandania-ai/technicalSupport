@@ -1,3 +1,15 @@
+html {
+  overflow-x: hidden; /* إيقاف التمرير الأفقي (عرض الصفحة الزائد) */
+  overflow-y: auto; /* إبقاء التمرير العمودي يعمل */
+  scrollbar-width: none; /* إخفاء الشريط العمودي في Firefox */
+  -ms-overflow-style: none; /* إخفاء الشريط العمودي في IE */
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+}
+
+
 /* جميع العناصر */
 * {
   margin: 0; /* إزالة الهوامش (المسافة بين العنصر والعناصر الأخرى من حوله)*/
