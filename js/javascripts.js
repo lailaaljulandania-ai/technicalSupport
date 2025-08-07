@@ -8,9 +8,9 @@ document.getElementById("greeting").innerHTML = `مرحبا، ${userName}`;
 */
 // جمع جميع الشرائح التي تحوي على اسم class=slide 
 let slides = document.querySelectorAll(".slide"); 
-// تعرف زر التالي
+// تعريف زر التالي
 const nextBtn = document.getElementById('nextBtn');
-// تعرف زر السابق
+// تعريف زر السابق
 const prevBtn = document.getElementById('prevBtn');
 // ترتيب الشريحة الأولى (الصورة الأولى)
 let slideIndex = 0;

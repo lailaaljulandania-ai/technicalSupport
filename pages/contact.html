@@ -15,7 +15,7 @@
                 <ul>
                     <img src="../images/logo.png" width="40px" height="40px">
                     <li><a href="../pages/home.html">الرئيسية</a></li>
-                    <li><a href="../pages/about.html">من نحن</a></li>
+                    <li><a href="../pages/calculator.html">الآلة الحاسبة</a></li>
                     <li><a href="../pages/contact.html">تواصل معنا</a></li>
                 </ul>
                 <form id="search">
@@ -31,7 +31,7 @@
         <br>
 
         <div id="contact">
-            <form class="contact-form">
+            <form class="contact-form" id ="contact-form">
                 <h2>ضع لنا رسالة</h2>
                 <label for="name">الاسم</label>
                 <input type="text" id="name" name="name" placeholder="اسمك" required>
@@ -43,6 +43,10 @@
                 <textarea id="message" name="message" placeholder="رسالتك" required></textarea>
 
                 <button type="submit">إرسال</button>
+                <br>
+                <br>
+                <!-- الرسالة التحذيرية -->
+                <div id="warningMessage"></div>
             </form>
         </div>
         <br>

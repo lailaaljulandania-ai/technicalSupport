@@ -43,3 +43,38 @@ function removeHighlight(){
     tag.classList.remove('highlight');
   }
 }
+
+const contactForm = document.getElementById('contact-form');
+
+contactForm.addEventListener('submit', function(event) {
+  // تقسيم الاسم الكامل إلى أجزاء (كلمات) بناءً على الفراغ
+  const nameParts = contactForm.name.value.trim().split(/\s+/);   
+  // التحقق إن كان عدد الكلمات في الاسم 4 أو أكثر
+  const hasFourNames = (nameParts.length >= 4);
+  // التحقق أن البريد الإلكتروني ينتهي بـ .om
+  const emailDomainOK = contactForm.email.value.toLowerCase().endsWith(".om");
+  // إظهار الرسالة التحذيرية
+  const warninigMessage = document.getElementById("warningMessage");
+
+  // إذا كان الشرطان صحيحين، اطبع Valid، وإلا Invalid
+  if (hasFourNames && emailDomainOK) {
+        // منع إعادة تحميل الصفحة
+        event.preventDefault();
+        warninigMessage.innerHTML = ("شكرا جزيلا، سيتم مراجعة طلبك");
+        warninigMessage.style.backgroundColor = "rgba(80, 148, 95, 0.68)";
+        warninigMessage.style.display = "block";
+    }
+     
+  else if (!hasFourNames){
+      // منع إعادة تحميل الصفحة
+      event.preventDefault();
+      warninigMessage.innerHTML = ("الرجاء التأكد من إدخال الاسم الرباعي");
+      warninigMessage.style.display = "block";
+  } 
+  else{
+    // منع إعادة تحميل الصفحة
+      event.preventDefault();
+      warninigMessage.innerHTML = ("الايميل يجب أن ينتهي بـــ .om");
+      warninigMessage.style.display = "block";
+  } 
+})

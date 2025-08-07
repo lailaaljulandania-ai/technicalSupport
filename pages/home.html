@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="direction: rtl;">
     <head>
         <!-- عنوان التبويب -->
         <title>دائرة الدعم الفني</title>
@@ -15,7 +15,7 @@
                 <ul>
                     <img src="../images/logo.png" width="40px" height="40px">
                     <li><a href="../pages/home.html">الرئيسية</a></li>
-                    <li><a href="../pages/about.html">من نحن</a></li>
+                    <li><a href="../pages/calculator.html">الآلة الحاسبة</a></li>
                     <li><a href="../pages/contact.html">تواصل معنا</a></li>
                 </ul>
                 <form id="search">
@@ -49,15 +49,15 @@
             <div class="slider-container">
                 <h2>خدماتنا</h2>
                 <div class="services-slider" id="slider">
-                    <div class="service-box active">
+                    <div class="service-box">
                         <h3> الدعم عبر الهاتف</h3>
                         <p>تواصل مباشر مع الفريق الفني لحل مشكلاتك بسرعة.</p>
                     </div>
-                    <div class="service-box active">
+                    <div class="service-box">
                         <h3> الدعم عن بُعد</h3>
                         <p>الدخول إلى جهازك عن بُعد وإصلاح الأعطال بدون زيارة ميدانية.</p>
                     </div>
-                    <div class="service-box active">
+                    <div class="service-box">
                         <h3> الصيانة الدورية</h3>
                         <p>فحص شهري للأجهزة والشبكات لضمان الأداء السليم.</p>
                     </div>
@@ -75,8 +75,8 @@
                     </div>
                 </div>
                 <!-- أزرار التنقل -->
-                <button id="previous" class="service-btn">‹</button>
-                <button id="next" class="service-btn">›</button>
+                <button id="previous" class="service-btn" onclick="prevBox()">‹</button>
+                <button id="next" class="service-btn" onclick="nextBox()">›</button>
             </div>
         </div>
         <footer>
@@ -84,5 +84,6 @@
         </footer>
         <!-- الربط مع صفحة الجافا سكربت -->
         <script src="../js/javascripts.js"></script>
+        <script src="../js/slider.js"></script>
     </body>
 </html>

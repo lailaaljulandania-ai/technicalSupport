@@ -275,7 +275,8 @@ h2 {
 
 .service-box {
   display: none;
-  min-width: 250px;  /* العرض الأدنى لكل صندوق خدمة هو 250 بكسل */
+  height: 100px;
+  width: 320px;  /* العرض الأدنى لكل صندوق خدمة هو 250 بكسل */
   background-color: #ffffff;  /* خلفية الصندوق بيضاء */
   border-left: 2px solid cadetblue;/* إطار أيسر أزرق بسماكة  2 بكسل */
   border-right: 2px solid cadetblue;/* إطار أيمن أزرق بسماكة  2 بكسل */
